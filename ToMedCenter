@@ -1,0 +1,40 @@
+
+#include <kipr/botball.h>
+
+int main()
+
+{
+
+
+
+//turn on with light
+wait_for_light(0); 
+
+//turn off in 2 minutes
+shut_down_in(119); // shut off the motors and stop
+
+//go forward for 2.7 seconds
+Motor (0,85);
+Motor (1,100);
+msleep(2700);
+
+//turn left
+Motor (0,-100);
+Motor (1,100);
+msleep(1100);
+
+//go forward
+Motor (0,85);
+Motor (1,100);
+msleep(6500);
+
+//back up
+Motor (0,-100);
+Motor (1,-100);
+msleep(2000);
+
+
+
+}
+
+
